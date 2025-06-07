@@ -1,0 +1,3 @@
+[submodule "libs/oofatfs"]
+	path = libs/oofatfs
+	url = https://github.com/micropython/oofatfs.git
