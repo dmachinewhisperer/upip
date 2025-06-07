@@ -1,3 +1,6 @@
 [submodule "libs/oofatfs"]
 	path = libs/oofatfs
 	url = https://github.com/micropython/oofatfs.git
+[submodule "libs/cJSON"]
+	path = libs/cJSON
+	url = https://github.com/DaveGamble/cJSON.git
