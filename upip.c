@@ -74,6 +74,7 @@ static FRESULT __f_save_json_to_file(FATFS *fs, const char *fname, cJSON **json)
     //FATFS * fs;
     //const char *pout;
     //__fs_fatfs_at_mount_point(FLASH_FS_ROOT_FS_PATH, &pout, &fs);
+    // mount delegated
 
     char *string = cJSON_Print(*json);
     if (string) {
@@ -100,7 +101,7 @@ static FRESULT __f_rm_r(FATFS *fs, const char *path) {
     //FATFS * fs;
     //const char *pout;
     //__fs_fatfs_at_mount_point(FLASH_FS_ROOT_FS_PATH, &pout, &fs);    
-    
+    //mount delegated
     FTRY(f_opendir(fs, &dir, path));
     while (1) {
         FTRY(f_readdir(&dir, &fno));
